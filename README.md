@@ -68,3 +68,15 @@
 ## Beam Search
 
 * Take **top $K$ most probable candidates** (sequences) at each timestamp.
+
+# Results
+| Model                              | Accuracy | CER    | TER    | BLEU   |
+|------------------------------------|----------|--------|--------|--------|
+| enc-dec-rnn                        | 40.00%   | 15.94% | 28.20% | 0.6912 |
+| enc-dec-rnn-attn                   | 55.75%   | 10.12% | 19.82% | 0.7959 |
+| enc-dec-rnn-attn (beam search)     | 41.75%   | 15.44% | 26.91% | 0.7018 |
+| enc-dec-rnn-attn (beam search)     | 56.50%   | 9.96%  | 19.03% | 0.8003 |
+
+## Attention Map
+<img width="800" height="590" alt="image" src="https://github.com/user-attachments/assets/2c5611c2-3b67-4a0d-86f8-1a77ab3a7ded" />
+
